@@ -3,8 +3,7 @@ install:
 		pip install -r requirements.txt
 
 test:
-	python -m pytest -vv *.ipynb
-	#py.test --nbval *.ipynb
+	python -m pytest -vv --nbval *.ipynb
 
 format:	
 	nbqa black *.ipynb &&\
